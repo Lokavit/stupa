@@ -3,11 +3,24 @@
   "displayName": "stupa",
   "description": "some utils",
   "icon": "assets/logo.png",
+  "version": "0.0.3",
+  "publisher": "Lokavit",
+  "author": {
+    "name": "Lokavit"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Lokavit/stupa.git"
   },
-  "version": "0.0.1",
+  "bugs": {
+    "url": "https://github.com/Lokavit/stupa/issues"
+  },
+  "homepage": "https://github.com/Lokavit/stupa/blob/main/README.md",
+  "license": "SEE LICENSE IN LICENSE",
+  "galleryBanner": {
+    "color": "#000000",
+    "theme": "dark"
+  },
   "engines": {
     "vscode": "^1.54.0"
   },
@@ -17,10 +30,12 @@
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "stupa.helloWorld",
-      "title": "Hello World"
-    }]
+    "commands": [
+      {
+        "command": "stupa.helloWorld",
+        "title": "Hello World"
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint .",
