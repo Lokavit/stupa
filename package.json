@@ -27,13 +27,36 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./extension.js",
   "contributes": {
     "commands": [
       {
         "command": "stupa.helloWorld",
         "title": "Hello World"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "stupa.insert",
+        "key": "alt+ctrl+I"
+      },
+      {
+        "command": "stupa.count",
+        "key": "alt+ctrl+T"
+      }
+    ],
+    "configuration": [
+      {
+        "title": "Stupa",
+        "properties": {
+          "stupa.insert.author": {
+            "type": "string",
+            "default": "UserName"
+          }
+        }
       }
     ]
   },

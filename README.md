@@ -4,6 +4,21 @@ Ready!
 
 ## Features
 
+- ✅ Insert file info to file
+- - ❎Activate: Created file or Keybindings`alt+ctrl+I`.
+- - ✅ FileInfo:`name、path、projecrname、birthtime、mtime、author`
+- - ✅ Support Language:`JavaScript、Markdown`
+- - ✅ Support Comment:`<!-- -->`or`/** */`
+
+- ❎ WordCount
+- - ❎ Auto Activate,It's setting`open / close`.
+- - ❎ Support for using in `Insert file info`
+- - ❎ This ext open & close
+- - ❎ Language:Chinese & English
+- - ❎ Custom position & suffix
+- - ❎ Statusbar `show / hide`
+- - ❎ Statusbar dynamic update wordcount for input
+
 ## Requirements
 
 ## Extension Settings
@@ -12,11 +27,7 @@ Ready!
 
 ## Release Notes
 
-### 1.0.0
-
-### 1.0.1
-
-### 1.1.0
+### 0.0.3
 
 ---
 
