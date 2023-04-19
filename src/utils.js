@@ -44,9 +44,14 @@ const RegexpChinese = new RegExp(/[^\x00-\xff]/g);
  * 传入当前激活文件的语言ID。
  * @param {*} id
  * @returns 返回语言ID对应的正则
+ * @Language:`markdown and javascript`
  */
 const GetLanguageId = (id) =>
-  id == FileType.MARKDOWN ? RegexpCommentMD : RegexpCommentJS;
+  id == FileType.MARKDOWN
+    ? RegexpCommentMD
+    : id == FileType.JAVASCRIPT
+    ? RegexpCommentJS
+    : "";
 
 /**
  * 文件内容中，是否包含指定注释块
@@ -64,16 +69,24 @@ const FindComment = (val, regexp) => !val.match(regexp) && true;
  */
 const GetComment = (val, regexp) =>
   FindComment(val, regexp) || val.match(regexp)[0];
-
 /**
  * 获取正文内容。此处使用`replace`将注释块替换为'',留下的就是正文内容
+ * TODO:支持多语言，多组合
  * @param {string} val 传入的文档
  * @param {RegExp} regexp 正则
  * @returns 返回正文内容，通常需要用到内容的长度
  * @example GetContext('context',RegexpChinese).length;
  */
 const GetContext = (val, regexp) =>
-  val.replace(GetComment(val, regexp), "").match(regexp);
+  val.replace(GetComment(val, regexp), "").match(RegexpChinese);
+
+/**
+ * 需要一个字数统计规则，根据语言不同，自定义变更字数统计方案
+ * markdwon:
+ *  1.只统计双字符(中文、中文标点)
+ *  2. 中文双字符+英文单词
+ *  3. 中英文+所有符号(含空白、非空白、制表、 非制表)
+ */
 
 /**
  * 构建文件信息注释块模板
@@ -116,6 +129,7 @@ module.exports = {
   RegexpCommentJS,
   RegexpChinese,
   FormatDateTime,
+  FileType,
   FindComment,
   GetComment,
   GetContext,

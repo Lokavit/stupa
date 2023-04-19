@@ -3,7 +3,7 @@
   "displayName": "stupa",
   "description": "some utils",
   "icon": "assets/logo.png",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "publisher": "Lokavit",
   "author": {
     "name": "Lokavit"
@@ -32,12 +32,7 @@
   ],
   "main": "./extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "stupa.helloWorld",
-        "title": "Hello World"
-      }
-    ],
+    "commands": [],
     "keybindings": [
       {
         "command": "stupa.insert",
@@ -45,7 +40,7 @@
       },
       {
         "command": "stupa.count",
-        "key": "alt+ctrl+T"
+        "key": "alt+ctrl+C"
       }
     ],
     "configuration": [
