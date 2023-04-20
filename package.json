@@ -3,7 +3,7 @@
   "displayName": "stupa",
   "description": "some utils",
   "icon": "assets/logo.png",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "publisher": "Lokavit",
   "author": {
     "name": "Lokavit"
@@ -28,7 +28,9 @@
     "Other"
   ],
   "activationEvents": [
-    "onStartupFinished"
+    "onStartupFinished",
+    "onLanguage:markdown",
+    "onLanguage:javascript"
   ],
   "main": "./extension.js",
   "contributes": {
@@ -50,6 +52,18 @@
           "stupa.insert.author": {
             "type": "string",
             "default": "UserName"
+          },
+          "stupa.insert.isActive": {
+            "type": "boolean",
+            "default": true
+          },
+          "stupa.insert.wordCount.isActive": {
+            "type": "boolean",
+            "default": true
+          },
+          "stupa.insert.changeTrack.isActive": {
+            "type": "boolean",
+            "default": true
           }
         }
       }
