@@ -1,3 +1,19 @@
+<!--
+  =====<< 卍 · Copyright · 卍 >>=====
+  FileName: README.md
+  Directory: stupa
+  Author: Lokavit
+  Birthtime: 2023/4/19 22:40:41
+  -----
+  Mtime: 2023/4/20 20:24:26
+  WordCount: 0
+  -----
+  Copyright © 1911 - 2023 Lokavit
+      卍 · 小僧過境　衆生甦醒 · 卍
+  =====<< 卍 · Description · 卍 >>=====
+
+-->
+
 # stupa README
 
 Ready!
@@ -25,6 +41,9 @@ Ready!
 - - ✅ IsActvie:VSCode Config
 - - ✅ Change mtime and update `mtime` value.
 - - ✅ Change wordCount and update `wordCount` value.
+- - ❎ Change directory and update `Directory` value.
+
+- ✅ Themes
 
 ## Requirements
 
@@ -36,8 +55,14 @@ Ready!
 - Stupa > Insert > Change Track:Is Active `true`
 
 ## Known Issues
-- I don't know some `Keybindings`  using for win10 
+
+- I don't know some `Keybindings` using for win10
+
 ## Release Notes
+
+### 0.0.7
+
+- Add themes
 
 ### 0.0.6
 

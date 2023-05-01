@@ -3,7 +3,7 @@
   "displayName": "stupa",
   "description": "some utils",
   "icon": "assets/logo.png",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "publisher": "Lokavit",
   "author": {
     "name": "Lokavit"
@@ -67,7 +67,12 @@
           }
         }
       }
-    ]
+    ],
+    "themes": [{
+      "label": "stupa",
+      "uiTheme": "vs-dark",
+      "path": "./themes/stupa-color-theme.json"
+    }]
   },
   "scripts": {
     "lint": "eslint .",

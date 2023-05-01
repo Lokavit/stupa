@@ -1,6 +1,19 @@
 /**
- * 测试生命周期
- */
+  =====<< 卍 · Copyright · 卍 >>=====
+  FileName: lifecycle.js
+  Directory: src
+  Author: Lokavit
+  Birthtime: 2023/4/20 18:45:49
+  -----
+  Mtime: 2023/4/20 19:23:50
+  WordCount: 117
+  -----
+  Copyright © 1911 - 2023 Lokavit
+      卍 · 小僧過境　衆生甦醒 · 卍
+  =====<< 卍 · Description · 卍 >>=====
+
+  测试生命周期
+*/
 const vscode = require("vscode");
 
 class Lifecycle {

@@ -1,12 +1,20 @@
 /**
+  =====<< 卍 · Copyright · 卍 >>=====
+  FileName: changeTrack.js
+  Directory: src
+  Author: Lokavit
+  Birthtime: 2023/4/19 22:42:03
+  -----
+  Mtime: 2023/4/20 20:10:53
+  WordCount: 0
+  -----
+  Copyright © 1911 - 2023 Lokavit
+      卍 · 小僧過境　衆生甦醒 · 卍
+  =====<< 卍 · Description · 卍 >>=====
  * 作用于在使用者每次按下保存时，对部分信息跟踪并更新
  * 注意处理当前文件保存的一些必要先决条件：
  * a).必须是在文件信息注释块中包含指定关键字
- * Some change tracking update data:
- * 1.FileMtime: 文件最后一次更新时间
- * 2.WordCoun: 当前文档的字数统计
- *
- */
+*/
 
 const vscode = require("vscode");
 const {

@@ -1,4 +1,18 @@
-/** some config */
+/**
+  =====<< 卍 · Copyright · 卍 >>=====
+  FileName: constants.js
+  Directory: src
+  Author: Lokavit
+  Birthtime: 2023/4/19 23:32:23
+  -----
+  Mtime: 2023/4/20 20:44:26
+  WordCount: 0
+  -----
+  Copyright © 1911 - 2023 Lokavit
+      卍 · 小僧過境　衆生甦醒 · 卍
+  =====<< 卍 · Description · 卍 >>=====
+  some config
+*/
 const BASE_SETTING = `stupa.insert`;
 
 /**

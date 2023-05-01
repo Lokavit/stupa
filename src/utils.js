@@ -1,3 +1,18 @@
+/**
+  =====<< 卍 · Copyright · 卍 >>=====
+  FileName: utils.js
+  Directory: src
+  Author: Lokavit
+  Birthtime: 2023/4/19 22:40:41
+  -----
+  Mtime: 2023/4/20 20:10:43
+  WordCount: 0
+  -----
+  Copyright © 1911 - 2023 Lokavit
+      卍 · 小僧過境　衆生甦醒 · 卍
+  =====<< 卍 · Description · 卍 >>=====
+
+*/
 const fs = require("fs");
 const path = require("path");
 const vscode = require("vscode");

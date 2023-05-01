@@ -1,3 +1,18 @@
+/**
+  =====<< 卍 · Copyright · 卍 >>=====
+  FileName: wordCount.js
+  Directory: src
+  Author: Lokavit
+  Birthtime: 2023/4/19 22:40:41
+  -----
+  Mtime: 2023/4/20 19:00:18
+  WordCount: 0
+  -----
+  Copyright © 1911 - 2023 Lokavit
+      卍 · 小僧過境　衆生甦醒 · 卍
+  =====<< 卍 · Description · 卍 >>=====
+
+*/
 const vscode = require("vscode");
 const { GetContext, GetLanguageId, IsAcitveWordCount } = require("./utils");
 const { FILE_TYPE_LANG } = require("./constants");
