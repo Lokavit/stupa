@@ -20,6 +20,7 @@ const vscode = require("vscode");
 const {
   IsActiveChangeTrack,
   FileMtime,
+  FileBirthtime,
   GetContext,
   GetLanguageId,
   IsAcitveWordCount,

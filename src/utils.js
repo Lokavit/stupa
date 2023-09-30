@@ -88,19 +88,6 @@ const Directory = (val) => {
 };
 
 /**
- * 文件路径，通常不用。
- * @param {*} val
- * @returns
- */
-// const FilePath = (val) => path.dirname(val);
-
-/**
- * 当前`workspace`的名字，通常为项目对应名文件夹名
- * @returns
- */
-const ProjectName = () => vscode.workspace.name;
-
-/**
  * 文件创建时间
  * @param {*} val
  * @returns
@@ -131,8 +118,8 @@ const GetLanguageId = (id) =>
   id == FILE_TYPE_LANG.MARKDOWN
     ? REGEXP_COMMENT_MD
     : id == FILE_TYPE_LANG.JAVASCRIPT
-    ? REGEXP_COMMENT_JS
-    : "";
+      ? REGEXP_COMMENT_JS
+      : "";
 
 /**
  * 文件内容中，是否包含指定注释块
@@ -178,24 +165,29 @@ const GetContext = (val, regexp) =>
  *   Project: ${ProjectName()}
  *   FilePath: ${FilePath(filename)}
  */
-const TPLCommon = (langId, filename) => `${
-  langId == FILE_TYPE_LANG.MARKDOWN ? "<!--" : "/**"
-}
-  =====<< 卍 · Copyright · 卍 >>=====
-  FileName: ${FileName(filename)}
-  Directory: ${Directory(filename)}
-  Author: ${Author()}
-  Birthtime: ${FileBirthtime(filename)}
-  -----
-  Mtime: ${FileMtime(filename)}${
-  IsAcitveWordCount() ? `\r\n  WordCount: 0` : ``
-}
-  -----
-  Copyright © 1911 - ${new Date().getFullYear()} ${Author()}
-      卍 · 小僧過境　衆生甦醒 · 卍
-  =====<< 卍 · Description · 卍 >>=====
+const TPLCommon = (langId, filename) => {
+  switch (langId) {
+    case FILE_TYPE_LANG.MARKDOWN:
+      return `---
+title: ${FileName(filename)}
+birthtime: ${FileBirthtime(filename)}
+mtime: ${FileMtime(filename)}\r\n---\r\n`;
 
-${langId == FILE_TYPE_LANG.MARKDOWN ? "-->" : "*/"}\r\n`;
+    case FILE_TYPE_LANG.JAVASCRIPT:
+      return `/** 
+FileName: ${FileName(filename)}
+Birthtime: ${FileBirthtime(filename)}
+Mtime: ${FileMtime(filename)}${IsAcitveWordCount() ? `\r\n  count: 0` : ``}
+-----
+Copyright © 1911 - ${new Date().getFullYear()} ${Author()}
+    卍 · 小僧過境　衆生甦醒 · 卍
+=====<< 卍 · Description · 卍 >>=====
+*/\r\n`;
+
+    // Directory: ${Directory(filename)}
+    // Author: ${Author()}
+  }
+}
 
 /**
  * 动态引入指定为见。或许用于package.json的加载

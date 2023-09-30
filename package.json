@@ -2,8 +2,8 @@
   "name": "stupa",
   "displayName": "stupa",
   "description": "some utils",
-  "icon": "assets/logo.png",
-  "version": "0.0.7",
+  "icon": "",
+  "version": "0.0.1",
   "publisher": "Lokavit",
   "author": {
     "name": "Lokavit"

@@ -1,3 +1,18 @@
+<!--
+  =====<< 卍 · Copyright · 卍 >>=====
+  FileName: vsc-extension-quickstart.md
+  Directory: stupa
+  Author: UserName
+  Birthtime: 2023/4/19 22:40:41
+  -----
+  Mtime: 2023/4/19 22:40:41
+  WordCount: 1
+  -----
+  Copyright © 1911 - 2023 UserName
+      卍 · 小僧過境　衆生甦醒 · 卍
+  =====<< 卍 · Description · 卍 >>=====
+
+-->
 # Welcome to your VS Code Extension
 
 ## What's in the folder

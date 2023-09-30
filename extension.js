@@ -1,3 +1,18 @@
+/**
+  =====<< 卍 · Copyright · 卍 >>=====
+  FileName: extension.js
+  Directory: stupa
+  Author: UserName
+  Birthtime: 2023/4/19 22:40:41
+  -----
+  Mtime: 2023/4/20 19:34:44
+  WordCount: 0
+  -----
+  Copyright © 1911 - 2023 UserName
+      卍 · 小僧過境　衆生甦醒 · 卍
+  =====<< 卍 · Description · 卍 >>=====
+
+*/
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 const vscode = require("vscode");

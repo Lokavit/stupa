@@ -526,12 +526,21 @@
       }
     },
     {
-      "name": "Markdown heading",
-      "scope": "markup.heading",
+      // md文件 标题 # 标识符后面的文字
+      "scope": ["markup.heading", "markup.heading entity.name"],
       "settings": {
-        "foreground": "#57c7ff"
+        "fontStyle": "bold",
+        "foreground": "#77e0e7"
       }
     },
+    {
+      // md 文件 列表 - 的颜色
+      "scope": "punctuation.definition.list.begin.markdown",
+      "settings": {
+        "foreground": "#03c7f8"
+      }
+    },
+
     {
       "name": "Markdown link text",
       "scope": "text.html.markdown meta.link.inline, meta.link.reference, markup.underline.link.image",
@@ -561,7 +570,7 @@
       }
     },
     {
-      "name": "Markdown italic",
+      "name": "Markdown italic", // 斜体字
       "scope": "markup.italic",
       "settings": {
         "foreground": "#69e0c6",
